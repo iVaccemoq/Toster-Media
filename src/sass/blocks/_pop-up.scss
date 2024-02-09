@@ -1,0 +1,108 @@
+.pop-up{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    display: none;
+    &_active{
+        display: block;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    &__container{
+        background-color: #fff;
+        width: 350px;
+        padding: 12px 14px;
+        border-radius: 10px;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(50%);
+        &_active{
+            animation-duration: 1s;
+            animation-name: slidein;
+            animation-fill-mode: forwards;
+        }
+    }
+    &__payments{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 16px;
+    }
+    &__installment-plan{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22px;
+    }
+    &__payment{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 14px;
+        color: #000;
+    }
+    &__months{
+        border-radius: 30px;
+        padding: 6px 14px;
+        width: 104px;
+        height: 29px;
+        background: #b0fde4;
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 14px;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__prices{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        position: relative;
+        &:before{
+            content: '';
+            border: 1px dashed #000;
+            width: 100%;
+            height: 0px;
+            position: absolute;
+            bottom: -16px;
+        }
+    }
+    &__total{
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 14px;
+        color: #545454;
+    }
+    &__price{
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 14px;
+        color: #545454;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 12px 14px;
+        width: 100%;
+        height: 48px;
+        background: #b0fde4;
+        font-family: var(--second-family);
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+        border: none;
+    }
+    &__close-btn{
+        border: none;
+    }
+}

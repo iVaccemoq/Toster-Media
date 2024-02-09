@@ -1,0 +1,108 @@
+.main-page{
+    background-color: #000;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /* &__div{
+        width: 100%;
+    } */
+    &__title{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        text-align: center;
+        background: linear-gradient(135deg, #878787 0%, #fefefe 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 16px;
+    }
+    &__descr{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        background: linear-gradient(135deg, #878787 0%, #fefefe 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 16px;
+    }
+    &__anchor{
+        border: 1px solid #fff;
+        border-radius: 16px;
+        padding: 4px 10px;
+        width: 199px;
+        height: 72px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__stars-wrapper{
+        display: flex;
+        margin-bottom: 9px;
+    }
+    &__grade{
+        margin-left: 9px;
+    }
+    &__reviews{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: #000;
+    }
+    &__arrow{
+        margin-left: 9px;
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        width: 208px;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 16px;
+        margin-bottom: 51px;
+    }
+    &__new-price{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 125%;
+        color: #fff;
+    }
+    &__old-price{
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 27px;
+        text-align: center;
+        color: #fff;
+        position: relative;
+    }
+    &__curves{
+        position: absolute;
+        top: 16px;
+        right: 0;
+    }
+    &__mac{
+        /* width: 330px; */
+        /* margin-bottom: 39px; */
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) ;
+        
+    }
+    &__advantages{
+        display: flex;
+        column-gap: 4px;
+        margin-top: 236px;
+        /* align-items: center; */
+        /* justify-content: space-between; */
+    }
+    &__trustpilot{
+        width: 139px;
+        margin-bottom: 4px;
+    }
+}

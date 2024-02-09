@@ -1,0 +1,207 @@
+.mac-view{
+    margin: 0 auto;
+    padding-bottom: 40px;
+    &__mac{
+        width: 330px;
+    }
+    &__slider{
+        display: flex;
+        transition: 0.5s all;
+        margin-top: 24px;
+    }
+    &__lines{
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        width: 330px;
+        background-color: #EBEAE8;
+    }
+    &__line{
+        height: 8px;
+        width: 81px;
+        border-radius: 10px;
+        background-color: white;
+        transition: 0.3s all;
+        border: none;
+        &_active{
+            background-color: #a0a0a0;
+        }
+    }
+    &__title{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 112%;
+        color: #1f1f1f;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__quanity{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #ff4053;
+        position: relative;
+        margin-bottom: 34px;
+        &::before{
+            content: '';
+            height: 8px;
+            width: 111px;
+            background-color: #ff4053;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            border-radius: 10px;
+        }
+    }
+    &__descr{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        color: #1f1f1f;
+        span{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    &__time-left{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+        text-align: center;
+        margin-bottom: 20px;
+        span{
+            font-family: var(--font-family);
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 150%;
+            color: #b15fff;
+        }
+    }
+    &__new-price{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 125%;
+        color: #1f1f1f;
+    }
+    &__price-wrapper{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__old-price{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #1f1f1f;
+        position: relative;
+    }
+    &__curves{
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
+    &__wrapper{
+        overflow: hidden;
+    }
+    &__discount{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #ff4053;
+        margin-left: 6px;
+    }
+    &__special-offer{
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;
+        text-align: center;
+        color: #000;
+    }
+    &__btn-buy{
+        border-radius: 8px;
+        padding: 11px 21px;
+        width: 330px;
+        height: 52px;
+        background: #b0fde4;
+        font-family: var(--font4);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        color: #000;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    &__delivery{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 143%;
+        color: #717271;
+        margin-top: 8px;
+        margin-bottom: 36px;
+        span{
+            display: block;
+        }
+    }
+    &__imgs{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+        column-gap: 20px;
+    }
+    &__arrow{
+        transform: rotate(180deg);
+        &_active{
+            transform: rotate(0);
+        }
+    }
+    &__dropDown-wrapper{
+        height: 0;
+        overflow: hidden;
+        &_active{
+            height: 100%;
+        }
+    }
+    &__dropDown{ 
+        visibility: hidden;
+        transform: translateY(-100%);
+        &_active{
+            visibility: visible;
+            transform: translateY(0);
+        }
+    }
+    &__shipping{
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: #1f1f1f;
+        margin-bottom: 12px;
+        border: none;
+        padding: 0;
+        
+    }
+    &__shipping-info{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 137%;
+        color: #6b6b6b;
+    }
+    
+}

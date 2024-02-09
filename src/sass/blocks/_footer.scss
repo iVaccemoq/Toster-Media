@@ -1,0 +1,28 @@
+.footer{
+    margin: 0 auto;
+    background: #1c1c1c;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    &__terms-of-use{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 8px;
+        text-align: center;
+        color: #fff;
+    }
+    &__btn{
+        border-radius: 100px;
+        padding: 6px 18px;
+        height: 24px;
+        background: #fff;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 7px;
+        color: #000;
+        border: none;
+        width: 75px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
